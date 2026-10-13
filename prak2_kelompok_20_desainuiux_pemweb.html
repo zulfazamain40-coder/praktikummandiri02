@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body>
+    <fieldset><p align="center"><strong>A Web Page</strong><br> <input type="text" value="http://pemesanan_barang.com" size="30"></p></fieldset>
+    
+
+    <!-- Navigasi Menu -->
+    <fieldset><p align="center"><input type="text" value="      Home   |        Generate Link   |     Histori transaksi   |     Policy  |   Logout"     size="70">
+        
+    </p>
+    <form action="hasil_pemesanan.html" method="GET">
+        <table border="0" width="100%">
+            <tr>
+                <td width="30%" align="center" valign="top">
+                    <table border=""  width="120" height="120">
+                        <tr>
+                            <td align="center"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input type="file" id="Upload_foto" name="Upload_foto" accept="image/" hidden >
+                    <button type="button" >Upload foto</button>
+                </td>
+
+                <!-- Bagian Kanan: Detail Input Form -->
+                <td width="70%" valign="top">
+                    <table border="0" cellpadding="4">
+                        <tr>
+                            <td><label for="title_here">Nama Barang :</label></td>
+                            <td><input type="text" id="title_here" name="title_here" value="" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="description">Informasi Barang:</label></td>
+                            <td>
+                                <textarea id="description" name="description" rows="4" cols="30"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Number_handphone">Number Handphone:</label></td>
+                            <td><input type="text" id="account_number" name="account_number" value="+62" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="bank">Bank :</label></td>
+                            <td>
+                                <select id="bank" name="bank">
+                                    <option value="HSBC" selected>seabank</option>
+                                    <option value="BCA">BCA</option>
+                                    <option value="BTN">BTN</option>
+                                    <option value="Mandiri">Mandiri</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Email">Email :</label></td>
+                            <td><input type="text" id="Nomor Number_handphone" name="Nomor Number_handphone" value="@gmail.com" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="transaction">Transaksi :</label></td>
+                            <td>
+                                <input type="number" id="transaksi" name="transaksi" value="1" min="1" style="width: 40px;"><br><small>if the transaction is for 3 person, choose 3from the drop-down list</small>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" id="send_mobile" name="notification" value="mobile" checked>
+                                <label for="send_mobile">Send to Mobile Phone</label><br>
+                                <input type="checkbox" id="send_email" name="notification" value="email" checked>
+                                <label for="send_email">Send to Email</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="send_to_mobile_phone">Send to Mobile Phone :</label></td>
+                            <td><input type="text" id="send_to_mobile_phone" name="send_to_mobile_phone" value="+62" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="send_to_email">Send to Email :</label></td>
+                            <td><input type="text" id="send_to_email" name="send_to_email" value="@gmail.com" size="35"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <p align="center">
+            <input type="submit" value="Generate Nabr Link">
+        </p>
+    </form>
+
+    </fieldset>
+</body>
+</html>

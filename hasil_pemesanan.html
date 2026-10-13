@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Hasil Pemesanan Barang</title>
+</head>
+<body>
+    <fieldset><p align="center"><strong>A Web Page</strong><br> <input type="text" value="http://hasil_pemesanan_barang.com" size="30"></p></fieldset>
+    <fieldset><p align="center"><input type="text" value="      Home    |            Register       |               Policy     |              About"     size="70">
+        
+    </p>
+    <form action="hasil_pemesanan.html" method="GET">
+        <table border="0" width="100%">
+            <tr>
+                <td width="40%" align="center" valign="top">
+                    <table border=""  width="120" height="120">
+                        <tr>
+                            <td align="center"></td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- Bagian Kanan: Detail Input Form -->
+                <td width="70%" valign="top">
+                    <table border="0" cellpadding="4">
+                        <tr>
+                            <td><label for="title_here">Nama Barang :...........</label></td>
+                        </tr>
+                        <tr>
+                            <td><label for="description">Informasi Barang:   ............</label></td>
+                        </tr>
+                        <tr>
+                            <td><label for="jumlah total">jumlah total:Rp.......</label></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><label for="pay to">pay to : .....</label></td>
+                        </tr>
+                        <tr>
+                            <td><label for="payment type">payment type :</label></td>
+                            <td>
+                                <input type="text" id="payment type" name="transaksi" value="Transfer Bank" style= "width: 90px;">
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td><label for="Account Holder">Account Holder :</label></td>
+                            <td>
+                                <input type="text" id="Account Holder" name="Account Holder" value="Name Here" style= "width: 90px;">
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td><label for="Account No">Account No :</label></td>
+                            <td>
+                                <input type="text" id="Account No" name="Account No" value="123-" style= "width: 90px;">
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" id="send_mobile" name="notification" value="mobile" checked>
+                                <label for="send_mobile">Send to Mobile Phone</label><br>
+                                <input type="checkbox" id="send_email" name="notification" value="email" checked>
+                                <label for="send_email">Send to Email</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="send_to_mobile_phone">Send to Mobile Phone :</label></td>
+                            <td><input type="text" id="send_to_mobile_phone" name="send_to_mobile_phone" value="+62" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="send_to_email">Send to Email :</label></td>
+                            <td><input type="text" id="send_to_email" name="send_to_email" value="@gmail.com" size="35"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <p align="center">
+            <input type="submit" value="Pay using Quid link">
+        </p>
+    </form>
+
+    </fieldset>
+</body>
+</html>
